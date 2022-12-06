@@ -3,8 +3,11 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let a = 8;
+let b = 9;
+
 console.log(
-  Math.max(8, 9)
+  Math.max(a, b)
 ); /*la funzione Mat.max permette di trovare il più grande tra i numeri forniti*/
 console.log(
   Math.min(2, 57)
@@ -15,10 +18,9 @@ console.log(
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num1 = 5;
 let num2 = 20;
 
-if (num1 !== num2) {
+if (5 !== num2) {
   console.log("not equal");
 }
 
@@ -39,13 +41,19 @@ if (25 % 5 == 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let num3 = 8;
-let num4 = 0;
+let num4 = 3;
 
 /* if (num3 || (num4 == 8 && num3 + num4 == 8 && num3 - num4 == 8)) {
   console.log("uno dei due numeri è 8");
 } */
-if ((num3, num4 == 8 || num3 + num4 == 8)) {
-  console.log("uno dei due numeri è 8");
+if (
+  num3 == 8 ||
+  num4 == 8 ||
+  num3 + num4 == 8 ||
+  num3 - num4 ||
+  num4 - num3 == 8
+) {
+  console.log("confermato");
 }
 
 /* ESERCIZIO 5
@@ -177,12 +185,13 @@ if (number % 2 == 0) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let val = 7;
+let val = 3;
 if (val < 10) {
   console.log("Meno di 10");
 } else if (val < 5) {
   console.log("Meno di 5");
-} else {
+}
+if (val >= 10) {
   console.log("Uguale a 10 o maggiore");
 }
 
@@ -215,7 +224,8 @@ console.log(me.lastName);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-delete me.skills;
+delete me
+  .skills[2]; /*<---IMPORTANTE! Negli array gli oggetti cominciano da "0" e non da "1"!*/
 console.log(me.skills);
 
 /* ESERCIZIO 14
@@ -223,9 +233,15 @@ console.log(me.skills);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+/* let arrayNumeri = [null]; */
+let arrayDiNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(arrayDiNumeri);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+arrayDiNumeri[9] = 100;
