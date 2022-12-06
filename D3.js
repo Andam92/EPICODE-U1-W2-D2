@@ -138,18 +138,31 @@ if (
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let first = 100;
+let second = 50;
+let third = 10;
+
+if (first > second && second > third) {
+  console.log(first, second, third);
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let example = 456873;
+console.log(typeof example);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let number = 9;
+if (number % 2 == 0) {
+  console.log("E' un numero pari");
+} else if (number % 2 !== 0) console.log("E' un numero dispari");
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -164,6 +177,14 @@ if (
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7;
+if (val < 10) {
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -172,22 +193,30 @@ if (
 const me = {
   name: "John",
   lastName: "Doe",
+  city: "Toronto",
   skills: ["javascript", "html", "css"],
 };
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+me.city = "Toronto";
+console.log(me.city);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName; /*risultato in console: undefined*/
+console.log(me.lastName);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.skills;
+console.log(me.skills);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
